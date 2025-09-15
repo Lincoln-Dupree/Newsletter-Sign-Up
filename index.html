@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <title>Newsletter Sign-Up</title>
+    <!-- optional no dark mode -- so I don't have to keep switching on/off when styling -->
+    <meta name="darkreader-lock" />
   </head>
   <body>
     <main class="main-container">
@@ -61,12 +63,13 @@
               id="email"
               name="email"
               class="email-input"
-              placeholder="YourName@email.com"
+              placeholder="example@email.com"
+              required
             />
+            <button type="submit" class="subscribe-btn">
+              Subscribe to monthly newsletter
+            </button>
           </form>
-          <button type="submit" class="subscribe-btn">
-            Subscribe to monthly newsletter
-          </button>
         </div>
       </section>
     </main>

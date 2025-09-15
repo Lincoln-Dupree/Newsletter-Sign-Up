@@ -1,5 +1,7 @@
 :root {
   --Red: hsl(4, 100%, 67%);
+  --Orange: rgb(255, 106, 58);
+  --Red-bg: rgb(255, 97, 85, 25%);
   --Blue-800: hsl(234, 29%, 20%);
   --Blue-700: hsl(235, 18%, 26%);
   --Grey: hsl(0, 0%, 58%);
@@ -96,6 +98,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+[type="email"]:not(:placeholder-shown):invalid {
+  border-color: var(--Red);
+  color: var(--Red);
+  background-color: var(--Red-bg);
 }
 
 .email-label {
