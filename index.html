@@ -56,16 +56,16 @@
           </div>
         </div>
         <div class="subscribe-container">
-          <form action="#" class="email-form">
+          <form action="#" class="email-form" novalidate>
             <label for="email" class="email-label">Email address</label>
             <input
-              type="email"
+              type="text"
               id="email"
               name="email"
               class="email-input"
               placeholder="example@email.com"
-              required
             />
+            <span class="error-msg"></span>
             <button type="submit" class="subscribe-btn">
               Subscribe to monthly newsletter
             </button>
