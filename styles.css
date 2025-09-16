@@ -186,7 +186,67 @@ body {
   font-weight: 700;
 }
 
-@media screen and (min-width: 481px) and (max-width: 1024px) and (orientation: portrait) {
+@media screen and (min-width: 1024px) {
+  html {
+    /* font-size: 16px; */
+    font-size: clamp(14px, 4.25vw, 22px);
+    font-family: "Roboto", sans-serif;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 80%;
+    height: 85%;
+    background-color: var(--White);
+    transition: display 0.2s ease-in-out;
+    border-radius: 2rem;
+    padding: 2rem;
+  }
+
+  .img-container {
+    width: 45%;
+    height: 100%;
+    background-image: url(/images/illustration-sign-up-desktop.svg);
+    background-size: cover;
+    border-radius: 1rem;
+  }
+
+  .info-container {
+    width: 55%;
+    height: 100%;
+    padding: 1rem 4rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .subscribe-btn {
+    background-color: var(--Blue-800);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .subscribe-btn:hover {
+    background-image: linear-gradient(to right, var(--Orange), var(--Red));
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px),
+  screen and (min-width: 481px) and (max-width: 1024px) and (orientation: portrait) {
+  html {
+    /* font-size: 16px; */
+    font-size: clamp(14px, 4.25vw, 18px);
+    font-family: "Roboto", sans-serif;
+  }
+
   .main-container {
     display: flex;
     flex-direction: column;
@@ -218,7 +278,4 @@ body {
   .subscribe-btn:hover {
     background-image: linear-gradient(to right, var(--Orange), var(--Red));
   }
-}
-
-@media screen and (min-width: 1024px) {
 }
