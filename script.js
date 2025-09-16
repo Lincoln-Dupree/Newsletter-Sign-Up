@@ -18,3 +18,4 @@ clearBtn.addEventListener("click", function () {
 
     subscribedPage.style.display = "none";
 });
+

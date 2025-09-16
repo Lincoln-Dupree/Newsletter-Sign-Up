@@ -10,7 +10,8 @@
 }
 
 html {
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: clamp(14px, 4.25vw, 20px);
   font-family: "Roboto", sans-serif;
 }
 
@@ -23,6 +24,8 @@ html {
 body {
   background-color: var(--Blue-700);
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   height: 100dvh;
