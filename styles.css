@@ -188,18 +188,12 @@ body {
 
 /* desktop styling */
 @media screen and (min-width: 1024px) {
-  html {
-    /* font-size: 16px; */
-    font-size: clamp(14px, 4.25vw, 22px);
-    font-family: "Roboto", sans-serif;
-  }
-
   .main-container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    width: 80%;
-    height: 85%;
+    width: 63%;
+    height: 63%;
     background-color: var(--White);
     transition: display 0.2s ease-in-out;
     border-radius: 2rem;
